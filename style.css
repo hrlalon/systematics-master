@@ -1,0 +1,346 @@
+/*==============================
+Common CSS
+===============================*/
+body{
+    color: #666666;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0px auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img{
+    max-width: 100%;
+    height: 50%;
+}
+
+.aligenleft{
+    float: left;
+    margin-right: 47px;
+    margin-bottom: 15px;
+}
+.aligenright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.aligencenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/*==============================
+Top Header CSS
+===============================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    background: #ba2e1f;
+    padding: 15px 0;
+    width: 100%;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+.mini_menu{
+    width: 70%;
+    float: left;
+    padding-top: 5px;
+}
+.mini_menu ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+.mini_menu ul li::after{
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    width: 1px;
+    height: 12px;
+    top: 7px;
+    right: -10px;
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+.mini_menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.mini_menu ul li a:hover{
+    color: #ddd;
+}
+.search_area{
+    width: 30%;
+    float: right;
+}
+.search_area form{
+    background: #ffffff;
+    border-radius: 25px;
+    max-width: 210px;
+    padding: 2%;
+    width: 96%;
+    float: right;
+}
+.search_area input{
+    border: none;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+}
+.search_area input[type="submit"]{
+    width: 23%;
+    background: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: right ;
+    cursor: pointer;
+}
+
+/*==============================
+Main Header CSS
+===============================*/
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.logo_area{
+    float: left;
+    width: 240px;
+}
+.social_area{
+    float: right;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 12px;
+}
+.social_area ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    background-color: #333333;
+    border-radius: 50%;
+    height: 25px;
+    width: 35px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 10px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.social_area ul li a:hover i{
+    background-color: #ba2e1f;
+}
+
+.social_area ul li a:hover i.fa-linkedin-in{
+    background-color: #0A66C2;
+}
+.social_area ul li a:hover i.fa-twitter{
+    background-color: #1DA1F2;
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background-color: #BD081C;
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+    background-color: #db4a39 ;
+}
+.social_area ul li a:hover i{
+    background-color: #ee802f;
+}
+
+/*==============================
+Main Menu CSS
+===============================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+    background: #333333;
+    position: relative;
+    padding: 15px 0;
+    min-height: 30px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.inner_menu::after{
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#main_menu ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 7px;
+    position: relative;
+
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+
+#main_menu ul ul li:hover a{
+    background: #333333;
+    color: #fff;
+}
+#main_menu ul ul li:hover ul li a{
+    background: none;
+    color: #ffffff;
+}
+#main_menu ul ul li:hover ul li a:hover{
+    background: #333333;
+    color: #ffffff;
+}
+#main_menu ul li:hover ul li a{
+    color: #fff;
+}
+
+#main_menu ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 3px;
+    transition: 0.5s;
+}
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+}
+
+/*Dropdown Menu Style*/
+
+#main_menu ul ul{
+    position: absolute;
+    background-color: #ba2e1f;
+    width: 180px;
+    left: -9999999px;
+    top: 33px;
+}
+#main_menu ul li:hover ul{
+    left: 0;
+}
+#main_menu ul li:hover ul ul{
+    left: -9999999px;
+}
+#main_menu ul li ul li:hover ul{
+    left: 180px;
+}
+#main_menu ul ul li{
+    margin: 0px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+#main_menu ul ul li:last-child{
+    border-bottom: none;
+}
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+#main_menu ul ul ul{
+    position: absolute;
+    background-color: #ba2e1f;
+    width: 180px;
+    left: -9999999px;
+    top: 0;
+}
+
+/*==============================
+Slider CSS
+===============================*/
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 90%;
+    left: 90%;
+    transform: translate(-90%, -90%);
+}
+.slider_caption{
+    color: #fff;
+}
+
+/*==============================
+Hero Area CSS
+===============================*/
+#hero_area{
+    background: #fff;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.inner_hero{
+    overflow: hidden;
+}
+.inner_hero h1{
+    color: #000;
+    font-size: 86px;
+    line-height: 1.2em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.inner_hero a:hover{
+    color: #000000;
+}
