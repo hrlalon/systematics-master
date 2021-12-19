@@ -344,3 +344,101 @@ Hero Area CSS
 .inner_hero a:hover{
     color: #000000;
 }
+
+/*==============================
+Work Area CSS
+===============================*/
+#work_area{
+    background: #f2f2f2;
+    padding: 45px 0;
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: Georgia;
+    margin-bottom: 45px;
+}
+.child_work p{
+    font-size: 14px;
+    margin-top: 0px;
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+}
+.child_work a:hover{
+    color: #000000;
+    transition: 0.5s;
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+.service_area{
+
+}
+.child_service{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child_service .child_image{
+    width: 25%;
+    float: left;
+}
+.child_service .service_text{
+    width: 75%;
+    float: right;
+}
+.child_service .service_text h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.child_service .service_text p{
+    margin-top: 0px;
+    line-height: 1.4em;
+}
+.testimonial_area{
+    margin-right: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    background-image: url(img/quote_icon.png);
+    background-repeat: no-repeat;
+    padding: 15px 0 6px 65px;
+    margin: 0px;
+    color: #939393;
+    font-size: 16px;
+    font-weight: bold;
+}
+.child_testimonial h3 span{
+    font-weight: normal;
+ }
+ .child_testimonial p{
+     margin: 0 0 10px 0;
+ }
+
+
+
