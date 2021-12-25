@@ -100,13 +100,14 @@ Top Header CSS
 }
 .search_area input{
     border: none;
-    width: 75%;
+    width: 78%;
     padding: 1%;
     float: left;
     color: #000;
+    border-radius: 10px;
 }
 .search_area input[type="submit"]{
-    width: 23%;
+    width: 20%;
     background: url(img/search.png);
     background-repeat: no-repeat;
     background-position: right ;
@@ -440,5 +441,149 @@ Work Area CSS
      margin: 0 0 10px 0;
  }
 
+/*==============================
+Footer Area CSS
+===============================*/
+#footer_area{
+    background: #ffffff;
+    padding: 45px 0;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_footer{
+     padding: 1%;
 
+     margin: 0 1% 10px;
+     width: 21%;
+     float: left;
+}
+.child_footer h3{
+    border-top: 1px solid #666666;
+    color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.child_footer h4{
+    color: #666666;
+    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.child_footer h6{
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.3em;
+}
+.child_footer p{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+}
+.child_footer p a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child_blog{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.child_blog p{line-height: 1.2em;}
+.child_blog a{
+    color: #b92d1f;
+    float: right;
+    text-decoration: none;
+}
+.child_blog h6 a{
+    color: #b92d1f;
+    float: none;
+    text-decoration: none;
+}
+.child_blog a:hover{
+    color: #851e15;
+}
+.child_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.child_footer ul ul{
+    display: none;
+}
+.child_footer li{
+    background: url(img/next.png) no-repeat
+    center left;
+    /*! padding-left: 18px; */
+    display: block;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 4px 0px 4px 18px;
+}
+.child_footer li:last-child{
+    display: block;
+    border-bottom: none;
+}
+.child_footer li a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.child_footer li a:hover{
+    color: #b92d1f;
+}
+.child_footer input{
+    background-color: #f2f2f2;
+    border: 0px solid;
+    padding: 10px 5%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.child_footer textarea{
+    background-color: #f2f2f2;
+    border: 0px solid;
+    padding: 10px 5%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 108px;
+}
+.child_footer input[type="submit"]{
+    width: 80px;
+    color: #b92d1f;
+    cursor: pointer;
+}
+.child_footer input[type="submit"]:hover{
+    background: #b92d1f;
+    color: #ffffff;
+    transition: 0.5s;
+}
 
+/*==============================
+Copyright Area CSS
+===============================*/
+
+#copyright_area{
+    background: #f2f2f2;
+    padding: 20px;
+}
+.inner_copyright{
+    overflow: hidden;
+}
+.inner_copyright p{
+    font-size: 12px;
+    color: #919191;
+    margin: 0px;
+}
+.left_copyright{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+.right_copyright{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
